@@ -1,0 +1,22 @@
+#debug: true
+
+#trace=true
+# 打开actuator 所有端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+
+
+spring:
+  ######### format  timestamp  to  yyyy-MM-dd HH:mm:ss
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+server:
+  port: 8000
+  servlet:
+    context-path: /thd
+#spring.mvc.view.prefix= /WEB-INF/pages/
+#spring.mvc.view.suffix= .jsp
